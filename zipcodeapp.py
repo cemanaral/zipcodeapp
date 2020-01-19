@@ -1,3 +1,4 @@
+import urllib.request
 def find_name(line):
     start = 9
     stop = line.index(' ZIP')
@@ -18,7 +19,6 @@ def find_pop(line):
 
 
 def main():
-    import urllib.request
     in_zip = input('Please enter your zip code: ')
     zip_url = 'http://www.uszip.com/zip/{}'.format(in_zip)
     zip_url = urllib.request.urlopen(zip_url)
