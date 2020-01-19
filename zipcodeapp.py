@@ -36,4 +36,3 @@ if __name__ == '__main__':
         main()
     except:
         print('Something went wrong')
-        exit()
